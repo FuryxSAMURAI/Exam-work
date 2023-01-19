@@ -1,0 +1,237 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@0,300;0,800;1,500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    user-select: none;
+}
+/* header */
+header{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgb(172, 172, 172);
+    color: rgb(0, 0, 0);
+    height: 100px;
+    min-width: 100vw;
+}
+.header__title{
+    font-size: 38px;
+    font-weight: bold;
+    padding: 20px 20px;
+}
+.li-lists{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 65px;
+}
+.li-list{
+    font-size: 24px;
+    margin-left: 20px;
+}
+li:first-child{
+    font-weight: bold;
+    color: red;
+}
+.header__user{
+    display: flex;
+    float: right;    
+    position: relative;
+    bottom: 100px;
+}
+.header__menu{
+    display: none; 
+    border: none;
+    height: 50px;
+    width: 50px;
+}
+.header__menu span{
+    border-radius: 10px;
+    position: absolute;
+    top: 20px;
+    left: 35px;
+    height: 3px;
+    width: 30px;
+    background-color: rgb(0, 0, 0);
+}
+.header__menu span:nth-child(1){
+    transform: translateY(-20px);
+}
+.header__menu span:nth-child(3){
+    transform: translateY(-10px);
+}
+.user__profile, .user__cart, .user__language{
+    position: absolute;
+    top: 5px;
+}
+.user__cart{
+    right: 250px;    
+}
+.user__cart a{
+    color: rgb(0, 0, 0);
+}
+.user__profile{
+    right: 150px;    
+}
+.user__profile a{
+    color: rgb(0, 0, 0);
+}
+.user__language{
+    right: 50px;    
+    top: 5px;
+}
+
+
+
+.menu__container{
+    display: none;
+    transition: .5s;
+}
+.menu__links{
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    background: white;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: right;
+    /* align-items: center; */
+}
+.menu__links, .link__container{
+    padding-top: 50px;
+}
+.menu__links a{
+    margin-right: 40px;
+    color: rgb(0, 0, 0);
+}
+.menu__links li:nth-child(1) a{
+    color: red;
+}
+.menu__link{
+    text-align: right;
+    margin-bottom: 40px;
+    transition: .3s;
+}
+.link__container{
+}
+.menu__link a:hover{
+    color: rgb(168, 168, 168);
+}
+.header__menu-links{
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    border: none;
+    height: 50px;
+    width: 50px;
+    /* background-color: white; */
+}
+.header__menu-links span{
+    border-radius: 10px;
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    height: 3px;
+    width: 30px;
+    background-color: rgb(0, 0, 0);
+}
+.header__menu-links span:nth-child(1){
+    transform: translateY(-20px);
+}
+/* .header__menu-links span:nth-child(2){
+} */
+.header__menu-links span:nth-child(3){
+    transform: translateY(-10px);
+}
+.menu__user{
+    display: flex;
+    margin-top: 20px;
+    position: absolute;
+    right: -5px;
+    font-size: 16px;
+    transition: 1s;
+}
+.menu__user a:hover{
+    color: rgb(168, 168, 168);
+}
+.menu__footer{
+    text-align: right;
+    min-width: 100vw;
+    height: 250px;
+    background-color: rgb(245, 244, 244);
+    position: relative;
+    top: 100px;
+    font-size: 16px;
+}
+.menu__footer div{
+    margin-bottom: 20px;
+    position: relative;
+    top: 30px;
+    right: 30px;
+}
+.footer__languages-menu{
+    position: absolute;
+    left: 15px;
+    margin-top: 40px;
+    transition: 1s;
+}
+.footer__contactNumber-menu:hover, .footer__payDeliv-menu:hover, .footer__askQuest-menu:hover{
+    cursor: pointer;
+    color: rgb(168, 168, 168);
+}
+.menu__footer a:hover{
+    cursor: pointer;
+    color: rgb(168, 168, 168);
+}
+
+@media screen and (max-width: 567px) { /* !PHONE */
+    .header__title{
+        text-align: center;
+    }
+    .li-lists{
+        display: none;
+    }
+    .header__user{
+        display: none;
+    }
+    .header__menu{
+        cursor: pointer;
+        float: right;
+        position: relative;
+        right: 50px;
+        bottom: 60px;
+        display: block;
+    }
+    /* .menu__container{
+        display: block;
+    } */
+    .header__menu-links{
+
+    }
+    .header__menu-links span:nth-child(1){
+        transform: translateY(-20px);
+        transform: rotate(-45deg);
+    }
+    .header__menu-links span:nth-child(2){
+        display: none;
+    }
+    .header__menu-links span:nth-child(3){
+        transform: translateY(-10px);
+        transform: rotate(45deg);
+    }
+}   
