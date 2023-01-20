@@ -14,6 +14,7 @@ a{
     text-decoration: none;
 }
 body{
+
     user-select: none;
 }
 /* header */
@@ -52,14 +53,14 @@ li:first-child{
 .header__menu{
     display: none; 
     border: none;
-    height: 50px;
-    width: 50px;
+    height: 25px;
+    width: 30px;
+    /* background-color: rgb(255, 0, 0); */
 }
 .header__menu span{
     border-radius: 10px;
     position: absolute;
     top: 20px;
-    left: 35px;
     height: 3px;
     width: 30px;
     background-color: rgb(0, 0, 0);
@@ -93,7 +94,8 @@ li:first-child{
 
 
 
-.menu__container{
+.menu__container{  
+    padding: 20px;
     display: none;
     transition: .5s;
 }
@@ -134,18 +136,18 @@ li:first-child{
 .header__menu-links{
     cursor: pointer;
     position: absolute;
-    top: 25px;
-    right: 20px;
+    top: 35px;
+    right: 38px;
     border: none;
-    height: 50px;
-    width: 50px;
-    /* background-color: white; */
+    height: 25px;
+    width: 25px;
+    /* background-color: aqua; */
 }
 .header__menu-links span{
     border-radius: 10px;
     position: absolute;
-    top: 20px;
-    left: 5px;
+    top: 11px;
+    left: -3px;
     height: 3px;
     width: 30px;
     background-color: rgb(0, 0, 0);
@@ -162,9 +164,17 @@ li:first-child{
     display: flex;
     margin-top: 20px;
     position: absolute;
-    right: -5px;
+    right: 0;
     font-size: 16px;
     transition: 1s;
+}
+.menu-user__cart{
+    position: relative;
+    left:30px;
+}
+.menu-user__profile{
+    position: relative;
+    left: 10px;
 }
 .menu__user a:hover{
     color: rgb(168, 168, 168);
@@ -184,11 +194,12 @@ li:first-child{
     top: 30px;
     right: 30px;
 }
-.footer__languages-menu{
-    position: absolute;
-    left: 15px;
+.footer__languages-menu a{ 
+    position: relative;
+    top: 20px;
+    right: -40px;
     margin-top: 40px;
-    transition: 1s;
+    transition: .5s;
 }
 .footer__contactNumber-menu:hover, .footer__payDeliv-menu:hover, .footer__askQuest-menu:hover{
     cursor: pointer;
@@ -203,25 +214,19 @@ li:first-child{
     .header__title{
         text-align: center;
     }
-    .li-lists{
+    .li-lists, .header__user{
         display: none;
     }
-    .header__user{
-        display: none;
+    .menu__container{
+        margin: 0;
     }
     .header__menu{
         cursor: pointer;
         float: right;
         position: relative;
-        right: 50px;
+        right: 35px;
         bottom: 60px;
         display: block;
-    }
-    /* .menu__container{
-        display: block;
-    } */
-    .header__menu-links{
-
     }
     .header__menu-links span:nth-child(1){
         transform: translateY(-20px);
