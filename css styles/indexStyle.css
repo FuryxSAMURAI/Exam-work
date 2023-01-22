@@ -27,7 +27,7 @@ li a:hover{cursor: pointer;color: rgb(117, 117, 117);}
 .header__user a{color: black;}
 .header__user a:hover{cursor: pointer;color: rgb(117, 117, 117);}
 
-.menu__container{padding: 20px;display: none;z-index: 1000;position: fixed;top: 0;}
+.menu__container{padding: 20px;display: none;z-index: 1000;position:absolute; top: 0;left: 0;}
 .menu__links{font-size: 18px;position: absolute;top: 0;left: 0;padding: 0;margin: 0;background: white;min-height: 100vh;min-width: 100vw;display: flex;justify-content: right;}
 .menu__links, .link__container{padding-top: 50px;}
 .menu__links a{margin-right: 40px;color: rgb(0, 0, 0);}
@@ -114,6 +114,9 @@ li a:hover{cursor: pointer;color: rgb(117, 117, 117);}
         display: none;
     }
     .menu__container{
+        position: fixed;
+        top: 0;
+        left: 0;
         margin: 0;
     }
     .header__menu{
